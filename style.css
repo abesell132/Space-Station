@@ -1,0 +1,100 @@
+#map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+#text-window h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 5px !important;
+  text-align: center;
+  backface-visibility: hidden;
+
+  -webkit-font-smoothing: antialiased;
+}
+#text-window p {
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+  backface-visibility: hidden;
+}
+#station-photo img {
+  width: 100%;
+  height: auto;
+}
+
+#station-photo {
+  position: relative;
+}
+
+#station-photo #src {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  padding: 0 5px 0 5px;
+  background-color: rgba(50, 50, 50, 0.5);
+}
+
+#station-photo #src a {
+  color: white;
+  text-decoration: none;
+  backface-visibility: hidden;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  #text-window {
+    max-width: 300px;
+    background-color: white;
+    position: absolute;
+    padding: 10px;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+  }
+}
+@media (max-width: 992px) {
+  #text-window {
+    left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #text-window {
+    height: auto;
+    width: 93vw;
+    padding: 1vw;
+    margin: 0 2.5vw;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 8vw;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+  }
+  #text-window p {
+    padding: 2vw;
+    text-align: center;
+    margin: 0;
+  }
+  #station-photo {
+    display: none;
+  }
+}

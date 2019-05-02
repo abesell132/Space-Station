@@ -6,7 +6,7 @@ Follow the International Space Station as it flies through the sky!
 ```
 1. Clone Repository
 2. Open index.html in a browser
-
+```
 ## Built With
 
 * [Google Maps Platform](https://developers.google.com/maps/documentation/)
